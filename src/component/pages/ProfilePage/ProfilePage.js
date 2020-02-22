@@ -4,13 +4,14 @@ import {Image, Card} from 'react-bootstrap'
 import profile from '../../../data/profile'
 import './style.css'
 import avatar from '../../../assets/images/avatar.png'
-import fish from '../../../assets/images/fish.png'
-import wave from '../../../assets/images/wave.png'
+import fish from '../../../assets/images/fish.svg'
+import wave from '../../../assets/images/wave.svg'
 
 const ProfilePage = () => {
     const immersions = profile.immersionHistory.reduce((a, curr) => {
         a.push(
             <Card body className="immersion-card">
+                <div className="immersion-icon"><img src={curr.icon === "fish" ? fish : wave} height={35} style={{color:"#ff7315"}}/></div>
                 <div><strong>Location:</strong> {curr.location}</div>
                 <div><strong>Community</strong>: {curr.community}</div>
                 <div><strong>Duration</strong>: {curr.duration}</div>

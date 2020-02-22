@@ -33,5 +33,10 @@ img.profile-pic {
     text-align: left;
     font-size: 18px;
     border-radius: 1px;
-    border-color: #ff7315 !important; 
+    /* border-color: #ff7315 !important;  */
+}
+
+.immersion-icon {
+    display: flex;
+    justify-content: flex-end;
 }
