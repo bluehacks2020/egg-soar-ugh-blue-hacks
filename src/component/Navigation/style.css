@@ -2,3 +2,7 @@
   background: #ff7315 !important;
   /* background: "orange"; */
 }
+
+a.nav-link {
+  color: #f4f4f4 !important;
+}
