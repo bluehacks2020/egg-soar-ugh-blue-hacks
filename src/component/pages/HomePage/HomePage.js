@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import MyCarousel from '../../MyCarousel'
 import LocationCard from '../../LocationCard'
@@ -16,7 +17,7 @@ const HomePage = () => {
   const article = articles.articles
 
   const renderLocationCards = () => (
-    location.map(loc => <LocationCard key={loc.id} id={loc.id} location={loc.location} community={loc.community} />)
+    location.map(loc => <Link to={{pathname: "/location"}}><LocationCard key={loc.id} id={loc.id} location={loc.location} community={loc.community} /></Link>)
   )
 
   const renderArticles = () => (
