@@ -29,14 +29,18 @@ img.profile-pic {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     font-size: 18px;
     border-radius: 1px;
     /* border-color: #ff7315 !important;  */
 }
 
-.immersion-icon {
-    display: flex;
-    justify-content: flex-end;
+.hyperlink {
+    padding-top: 3px;
+    font-size: 13px;
+}
+
+.card-body {
+    padding: 25px !important;
 }

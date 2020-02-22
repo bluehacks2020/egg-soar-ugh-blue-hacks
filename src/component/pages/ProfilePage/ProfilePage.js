@@ -12,9 +12,10 @@ const ProfilePage = () => {
         a.push(
             <Card body className="immersion-card">
                 <div className="immersion-icon"><img src={curr.icon === "fish" ? fish : wave} height={35} style={{color:"#ff7315"}}/></div>
-                <div><strong>Location:</strong> {curr.location}</div>
+                <div><strong>Location:</strong>: {curr.location}</div>
                 <div><strong>Community</strong>: {curr.community}</div>
                 <div><strong>Duration</strong>: {curr.duration}</div>
+                <div className="hyperlink"><a href=""><u>See updates from {curr.location}</u></a></div>
             </Card>
         )
         return a
