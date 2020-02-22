@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -23,7 +24,7 @@ const Navigation = (props) => {
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
-        <Nav.Link href="#home">Home</Nav.Link>
+        <Link to={{pathname: "/home"}}>Home</Link>
         <Nav.Link href="#link">Profile</Nav.Link>
         <Nav.Link href="#link">Settings</Nav.Link>
         <Nav.Link href="#link">Logout</Nav.Link>
