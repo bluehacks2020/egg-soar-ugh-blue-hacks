@@ -104,7 +104,7 @@ const LocationPage = () => {
               <div> {sched.date} </div>
               <div> Slots: {sched.slots} </div>
               <BookButton date={sched.date} />
-              <div class="border-top my-3"></div>
+              <div className="border-top my-3"></div>
             </div>
           </>
         ))}
