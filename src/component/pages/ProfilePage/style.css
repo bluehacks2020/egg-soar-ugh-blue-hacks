@@ -1,0 +1,37 @@
+.ProfilePage {
+    text-align: center;
+}
+
+.profile-header {
+    background-image: url("../../../assets/images/palawan.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.profile-text {
+    padding-top: 150px;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+img.profile-pic {
+    border: solid 3px;
+    border-color: #3a3535 !important;
+}
+
+.profile-subsection {
+    margin-top: 10px;
+}
+
+.immersion-card {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 1px;
+    border-color: #ff7315 !important; 
+}

@@ -4,6 +4,8 @@ import {Image, Card} from 'react-bootstrap'
 import profile from '../../../data/profile'
 import './style.css'
 import avatar from '../../../assets/images/avatar.png'
+import fish from '../../../assets/images/fish.png'
+import wave from '../../../assets/images/wave.png'
 
 const ProfilePage = () => {
     const immersions = profile.immersionHistory.reduce((a, curr) => {
@@ -30,7 +32,8 @@ const ProfilePage = () => {
                 </h6>
             </div>
         </div>
-        <div style={{height:"150px", backgroundColor: "white"}}/>
+        <div style={{height:"150px"}}/>
+        <hr/>
         <div className="profile-subsection">
             <h4>Past Immersions</h4>
             <div className="immersion-list">
