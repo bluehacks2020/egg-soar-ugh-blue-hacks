@@ -1,5 +1,52 @@
 .kontainer {
-    margin: 20px;
-    padding: 30px;
-    background-color: white;
+  margin: 10px;
+  padding: 30px;
+  background-color: white;
+}
+
+.location-header {
+  background-image: url("../../../assets/images/dumagat.jpg");
+  background-size: cover;
+  height: 200px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+ol {
+  padding-left: 0.1em;
+}
+
+.btn-outline-warning {
+  border-color: #ff7315 !important;
+  color: #ff7315 !important;
+
+
+}
+.btn-outline-warning:hover {
+  background-color: #ff7315 !important;
+  color: white !important;
+
+
+}
+
+.btn-outline-warning:active {
+
+  border-color: #ff7315 !important;
+}
+.btn-outline-warning:visited {
+  border-color: #ff7315 !important;
+
+}
+.btn-outline-warning:focus {
+  background-color: #ff7315 !important;
+  border-color: #ff7315 !important;
 }
