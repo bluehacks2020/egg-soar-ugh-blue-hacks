@@ -2,25 +2,27 @@ import React from 'react'
 
 import MyCarousel from '../../MyCarousel'
 import LocationCard from '../../LocationCard'
-import { locations } from '../../../data/locations'
+import ArticleCard from '../../ArticleCard'
+import  { locations }  from '../../../data/locations'
+import  { articles }  from '../../../data/articles'
 import './style.css'
 
 const HomePage = () => {
-  const data = locations.locations;
-  console.log(data)
+  const location = locations.locations
+  const article = articles.articles
 
   const renderLocationCards = () => (
-    data.map(loc => <LocationCard key={loc.id} id={loc.id} location={loc.location} community={loc.community} />)
+    location.map(loc => <LocationCard key={loc.id} id={loc.id} location={loc.location} community={loc.community} />)
   )
 
   const renderArticles = () => (
-    <div></div>
+    article.map(art => <ArticleCard key={art.id} id={art.id} title={art.title} date={art.date} preview={art.preview} />)
   )
 
   return (
     <div className="HomePage">
       <MyCarousel />
-      <h2 className="mt-4">Locations</h2>
+      <h2 className="mt-4">Immersions</h2>
       <hr/>
       { renderLocationCards() }
       <h2 className="mt-4">Articles</h2>
