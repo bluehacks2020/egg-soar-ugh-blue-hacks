@@ -1,0 +1,13 @@
+.ArticleCard {
+    max-width: 100% !important;
+    margin: 25px;
+    text-align: left;
+}
+
+.ArticleCard a, .ArticleCard a:active, .ArticleCard a:visited, .ArticleCard a:focus {
+    color: #ff7315;
+}
+
+.ArticleCard .card-title {
+    font-weight: 600;
+}
