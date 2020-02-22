@@ -5,6 +5,7 @@ import Navigation from './component/Navigation';
 import Footer from './component/Footer';
 import HomePage from './component/pages/HomePage'
 import LocationPage from './component/pages/LocationPage'
+import ProfilePage from './component/pages/ProfilePage'
 
 import './App.css';
 
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/location">
             <LocationPage />
+          </Route>
+          <Route path="/profile">
+            <ProfilePage />
           </Route>
           <Route path="/">
             <HomePage />
