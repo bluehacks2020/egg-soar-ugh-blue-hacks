@@ -7,8 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
 }
 
-.LocationCard h6 {
+.LocationCard h5 {
     text-transform: uppercase;
+}
+
+.LocationCard p {
+    text-transform: capitalize;
 }
