@@ -5,4 +5,9 @@
     height: 100px;
     text-align: center;
     color: white;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
 }
