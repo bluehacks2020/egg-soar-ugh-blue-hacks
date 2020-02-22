@@ -4,13 +4,24 @@ import './App.css';
 import SampleComponent from './component/SampleComponent';
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Footer />
-
+      <Router>
+        <div>
+        <Navigation />
+        <Switch>
+        </Switch>
+        <Footer />
+        </div>
+      </Router>
     </div>
   );
 }
