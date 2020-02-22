@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import "./style.css";
 import { locations } from "../../../data/locations";
-import image from "../../../assets/images/dumagat.jpg";
-import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
 
 import Testimonial from "../../Testimonial";
 
@@ -40,11 +36,6 @@ const BookButton = (props) => {
               </Form.Label>
               <Form.Control type="text" />
               <Form.Label>
-                What will you do if the household you’re assigned to has a lot
-                of cockroaches?
-              </Form.Label>
-              <Form.Control type="text" />
-              <Form.Label>
                 Are you willing to sleep on a banig?
               </Form.Label>
               <Form.Control type="text" />
@@ -69,7 +60,7 @@ const BookButton = (props) => {
   );
 }
 const LocationPage = () => {
-  const data = locations.locations[0];
+  const data = locations.locations[2];
 
   return (
     <div className="LocationPage">
