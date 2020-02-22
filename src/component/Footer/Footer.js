@@ -7,7 +7,7 @@ const Footer = (props) => (
     <div className="myFooter">
       <p className="footer-brand"></p>
       <hr/>
-      <p>Hello</p>
+      <p>Experience a day in the life of ethnic groups in the Phillipines.</p>
     </div>
     <div className="copyrightInfo">© 2020 Kultura, Inc. All rights reserved.</div>
   </Fragment>
