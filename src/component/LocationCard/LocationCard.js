@@ -5,7 +5,7 @@ import dumagat from '../../assets/images/dumagat.jpg'
 import ivatan from '../../assets/images/ivatan.jpg'
 import './style.css'
 
-const LocationCard = ({ id, location}) => {
+const LocationCard = ({ id, location, community }) => {
     return(
         <div className="LocationCard"
             style={{
@@ -13,7 +13,8 @@ const LocationCard = ({ id, location}) => {
                 backgroundSize: 'cover'
             }}
             location-id={id}>
-            <h6>{location}</h6>
+            <h5>{location}</h5>
+            <p>{community}</p>
         </div>
     )
 }
