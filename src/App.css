@@ -11,3 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Rubik, sans-serif !important;
   font-weight: 700;
 }
+
+hr {
+  border: none;
+  margin: 0.5rem auto !important;
+  height: 5px !important;
+  width: 20%;
+  color: #333;
+  background-color: #333;
+}
