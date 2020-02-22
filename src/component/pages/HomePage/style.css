@@ -1,3 +1,13 @@
 .HomePage {
     text-align: center;
 }
+
+.HomePage .lgus {
+    margin: 0 25px;
+}
+
+.HomePage .row img {
+    max-width: 100%;
+    padding: 25px 0;
+    filter: grayscale(100%);
+}
