@@ -17,14 +17,14 @@ const Navigation = (props) => {
 
   return (
     <Navbar className="color-nav" expand="lg" fixed="top">
-    <Navbar.Brand href="#home" style={{color: '#f4f4f4'}}></Navbar.Brand>
+    <Link to={{pathname: "/"}}><Navbar.Brand href="#home" style={{color: '#f4f4f4'}}></Navbar.Brand></Link>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto mb-2">
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
-        <Link to={{pathname: "/home"}}>Home</Link>
+        <Link to={{pathname: "/"}}>Home</Link>
         <Nav.Link href="#link">Profile</Nav.Link>
         <Nav.Link href="#link">Settings</Nav.Link>
         <Nav.Link href="#link">Logout</Nav.Link>
