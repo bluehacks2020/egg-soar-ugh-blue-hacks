@@ -1,15 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
 import HomePage from './component/pages/HomePage'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
+import './App.css';
 
 function App() {
   return (
