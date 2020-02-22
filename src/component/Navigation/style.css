@@ -3,6 +3,23 @@
   /* background: "orange"; */
 }
 
+.navbar {
+  padding: 0 1rem !important;
+  transition: 0.25s top ease-in-out;
+}
+
+nav.navbar.hide {
+  top: -82px;
+}
+
 a.nav-link {
   color: #f4f4f4 !important;
+}
+
+a.navbar-brand {
+  display: block;
+  width: 130px;
+  height: 82px;
+  background: url(../../assets/images/logo.svg);
+  background-size: 130px 82px;
 }

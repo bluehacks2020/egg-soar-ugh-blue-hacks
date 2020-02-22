@@ -1,11 +1,20 @@
 .LocationCard {
     border-radius: 5px;
-    margin: 25px 50px;
-    height: 100px;
+    margin: 25px;
+    height: 250px;
     text-align: center;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.LocationCard h5 {
+    text-transform: uppercase;
+}
+
+.LocationCard p {
+    text-transform: capitalize;
 }
