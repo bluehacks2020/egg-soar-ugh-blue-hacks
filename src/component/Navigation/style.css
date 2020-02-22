@@ -12,6 +12,12 @@ nav.navbar.hide {
   top: -82px;
 }
 
+nav a {
+  color: #f4f4f4 !important;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
 a.nav-link {
   color: #f4f4f4 !important;
   text-transform: uppercase;
