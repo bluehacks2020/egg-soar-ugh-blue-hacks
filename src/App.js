@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SampleComponent from './component/SampleComponent';
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
+import Home from './component/pages/HomePage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,6 +18,9 @@ function App() {
         <div>
         <Navigation />
         <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
         <Footer />
         </div>
