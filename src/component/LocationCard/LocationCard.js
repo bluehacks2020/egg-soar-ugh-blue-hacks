@@ -1,13 +1,13 @@
 import React from 'react'
 
+import zambales from '../../assets/images/zambales.jpg'
 import './style.css'
 
 const LocationCard = props => {
-    document.getElementsByClassName('LocationCard').style.backgroundImage = "url('img_tree.png')";
-
     return(
-        <div className="LocationCard">
-            
+        <div className="LocationCard" style={{backgroundImage: `url(${zambales})`, backgroundSize: 'cover'}}>
+            <div>Zambales</div>
+            <div>Aeta Community</div>
         </div>
     )
 }
