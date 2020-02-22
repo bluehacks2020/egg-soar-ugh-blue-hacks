@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
@@ -18,8 +18,10 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
+          <Route path="/location">
+            <LocationPage />
+          </Route>
         </Switch>
-        <LocationPage />
         <Footer />
         </div>
       </Router>
