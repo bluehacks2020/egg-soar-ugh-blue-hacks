@@ -1,35 +1,23 @@
-import React from 'react';
-import MyCarousel from '../../MyCarousel';
+import React, { Fragment } from 'react'
+
+import MyCarousel from '../../MyCarousel'
+import LocationCard from '../../LocationCard'
 import { locations } from '../../../data/locations'
 
-const HomePage = (props) => {
+const HomePage = props => {
   const data = locations.locations;
   console.log(data);
 
-  // const renderLocationCards = () => {
-
-  //   return (
-
-  //   );
-  
-
-  // }
+  const renderLocationCards = () => (
+    data.map(loc => <LocationCard key={loc.id} location={loc.location} />)
+  )
 
   return (
-    <>
-    <MyCarousel />
-    <div> Location Cards </div>
-
-    <ol>
-    {data.map(loc => (
-        <li key={loc.id}>{loc.location}</li>
-      ))}
-    </ol>
-
-  
-    </> 
-
-  );
+    <Fragment>
+      <MyCarousel />
+      { renderLocationCards() }
+    </Fragment>
+  )
 }
 
 export default HomePage;
