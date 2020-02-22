@@ -4,17 +4,17 @@ import MyCarousel from '../../MyCarousel'
 import LocationCard from '../../LocationCard'
 import { locations } from '../../../data/locations'
 
-const HomePage = props => {
+const HomePage = () => {
   const data = locations.locations;
-  console.log(data);
 
   const renderLocationCards = () => (
-    data.map(loc => <LocationCard key={loc.id} location={loc.location} />)
+    data.map(loc => <LocationCard id={loc.id} location={loc.location} />)
   )
 
   return (
     <Fragment>
       <MyCarousel />
+      <p>Locations</p>
       { renderLocationCards() }
     </Fragment>
   )
