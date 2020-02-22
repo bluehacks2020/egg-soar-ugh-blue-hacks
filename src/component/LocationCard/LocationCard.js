@@ -8,7 +8,10 @@ import './style.css'
 const LocationCard = ({ id, location}) => {
     return(
         <div className="LocationCard"
-            style={{backgroundImage: `url(${id == 1 ? aeta : id == 2 ? ivatan : dumagat})`, backgroundSize: 'cover'}}
+            style={{
+                backgroundImage: `url(${id === 1 ? aeta : id === 2 ? ivatan : dumagat})`, 
+                backgroundSize: 'cover'
+            }}
             location-id={id}>
             <h6>{location}</h6>
         </div>
