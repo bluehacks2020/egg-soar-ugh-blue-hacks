@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
 import HomePage from './component/pages/HomePage'
+import LocationPage from './component/pages/LocationPage'
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
+        <LocationPage />
         <Footer />
         </div>
       </Router>
