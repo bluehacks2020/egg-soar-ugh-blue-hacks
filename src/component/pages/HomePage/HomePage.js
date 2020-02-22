@@ -17,7 +17,8 @@ const HomePage = () => {
   const article = articles.articles
 
   const renderLocationCards = () => (
-    location.map(loc => <Link to={{pathname: "/location"}}><LocationCard key={loc.id} id={loc.id} location={loc.location} community={loc.community} /></Link>)
+    location.map(loc => {
+      return <Link key={loc.id} to={{pathname: "/location", state: {locId: loc.id}}}><LocationCard id={loc.id} location={loc.location} community={loc.community} /></Link>})
   )
 
   const renderArticles = () => (
