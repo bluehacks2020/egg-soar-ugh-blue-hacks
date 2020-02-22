@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
-import Home from './component/pages/HomePage'
+import HomePage from './component/pages/HomePage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +19,7 @@ function App() {
         <Navigation />
         <Switch>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
         <Footer />
