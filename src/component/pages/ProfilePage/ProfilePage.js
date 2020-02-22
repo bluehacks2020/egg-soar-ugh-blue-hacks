@@ -1,7 +1,9 @@
 import React from 'react'
-import {Image, Card} from 'react-bootstrap'
+import {Image, Card, Button} from 'react-bootstrap'
 
 import profile from '../../../data/profile'
+import LocationCard from '../../LocationCard'
+import { locations } from '../../../data/locations'
 import './style.css'
 import avatar from '../../../assets/images/avatar.png'
 import fish from '../../../assets/images/fish.svg'
@@ -20,6 +22,8 @@ const ProfilePage = () => {
         )
         return a
     }, [])
+
+    const loc = locations.locations[0]
 
     return (
     <div className="ProfilePage">
@@ -45,7 +49,13 @@ const ProfilePage = () => {
         <div className="profile-subsection">
             <h4>Top Recommended</h4>
             <div>
+                <LocationCard key={loc.id} id={loc.id} location={loc.location} community={loc.community} />
             </div>
+        </div>
+        <div className="profile-article">
+            <Button variant="outline-warning">
+                Write an Article
+            </Button>
         </div>
     </div>
     )

@@ -44,3 +44,29 @@ img.profile-pic {
 .card-body {
     padding: 25px !important;
 }
+
+.btn-outline-warning {
+    border-color: #ff7315 !important;
+    color: #ff7315 !important;
+  
+  
+  }
+  .btn-outline-warning:hover {
+    background-color: #ff7315 !important;
+    color: white !important;
+  
+  
+  }
+  
+  .btn-outline-warning:active {
+  
+    border-color: #ff7315 !important;
+  }
+  .btn-outline-warning:visited {
+    border-color: #ff7315 !important;
+  
+  }
+  .btn-outline-warning:focus {
+    background-color: #ff7315 !important;
+    border-color: #ff7315 !important;
+  }
