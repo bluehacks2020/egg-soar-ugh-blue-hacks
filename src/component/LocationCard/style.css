@@ -1,11 +1,14 @@
 .LocationCard {
     border-radius: 5px;
     margin: 25px;
-    height: 100px;
+    height: 250px;
     text-align: center;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: space-around;
+    align-items: center;
+}
+
+.LocationCard h6 {
+    text-transform: uppercase;
 }
