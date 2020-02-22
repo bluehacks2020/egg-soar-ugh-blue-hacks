@@ -14,6 +14,7 @@ nav.navbar.hide {
 
 a.nav-link {
   color: #f4f4f4 !important;
+  text-transform: uppercase;
 }
 
 a.navbar-brand {
