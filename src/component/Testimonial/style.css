@@ -1,0 +1,16 @@
+.testimonial {
+    margin: 25px;
+    padding: 30px;
+    background-color: white;
+}
+
+.avatar-header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+}
