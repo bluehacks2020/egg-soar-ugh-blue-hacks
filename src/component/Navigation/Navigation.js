@@ -11,7 +11,7 @@ import './style.css';
 const Navigation = (props) => {
   return (
     <Navbar className="color-nav" expand="lg">
-    <Navbar.Brand href="#home">Placeholder</Navbar.Brand>
+    <Navbar.Brand href="#home" style={{color: '#f4f4f4'}}>KULTURA</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
