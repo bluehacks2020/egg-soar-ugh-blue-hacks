@@ -15,11 +15,11 @@ function App() {
         <div>
         <Navigation />
         <Switch>
-          <Route path="/">
-            <HomePage />
-          </Route>
           <Route path="/location">
             <LocationPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
           </Route>
         </Switch>
         <Footer />
