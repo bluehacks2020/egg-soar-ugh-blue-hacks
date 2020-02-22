@@ -29,14 +29,44 @@ img.profile-pic {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     font-size: 18px;
     border-radius: 1px;
     /* border-color: #ff7315 !important;  */
 }
 
-.immersion-icon {
-    display: flex;
-    justify-content: flex-end;
+.hyperlink {
+    padding-top: 3px;
+    font-size: 13px;
 }
+
+.card-body {
+    padding: 25px !important;
+}
+
+.btn-outline-warning {
+    border-color: #ff7315 !important;
+    color: #ff7315 !important;
+  
+  
+  }
+  .btn-outline-warning:hover {
+    background-color: #ff7315 !important;
+    color: white !important;
+  
+  
+  }
+  
+  .btn-outline-warning:active {
+  
+    border-color: #ff7315 !important;
+  }
+  .btn-outline-warning:visited {
+    border-color: #ff7315 !important;
+  
+  }
+  .btn-outline-warning:focus {
+    background-color: #ff7315 !important;
+    border-color: #ff7315 !important;
+  }
