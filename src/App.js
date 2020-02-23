@@ -6,6 +6,7 @@ import Footer from './component/Footer';
 import HomePage from './component/pages/HomePage'
 import LocationPage from './component/pages/LocationPage'
 import ProfilePage from './component/pages/ProfilePage'
+import ConfirmedPage from './component/pages/ConfirmedPage'
 
 import './App.css';
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path="/profile">
             <ProfilePage />
+          </Route>
+          <Route exact path="/confirmation">
+            <ConfirmedPage />
           </Route>
           <Route exact path="/">
             <HomePage />

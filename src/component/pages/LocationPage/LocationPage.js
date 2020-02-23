@@ -4,6 +4,7 @@ import { locations } from "../../../data/locations";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
+import { Link } from 'react-router-dom';
 
 import Testimonial from "../../Testimonial";
 
@@ -51,20 +52,72 @@ const BookButton = (props) => {
           <Button variant="light" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="outline-warning" onClick={handleClose}>
+          {/* <Button variant="outline-warning" onClick={handleClose}>
             Confirm Booking
-          </Button>
+          </Button> */}
+          <Link to="/confirmation">
+            <Button variant="outline-warning" onClick={handleClose}>
+            Confirm Booking
+            </Button>
+            </Link>
         </Modal.Footer>
       </Modal>
     </>
   );
 }
-const LocationPage = () => {
+const Confirm = (props) => {
+    const [show, setShow] = useState(false);
+  
+    const handleClose = () => setShow(false);
+    const handleShow = () => {
+        onClose(props.onClose);
+        setShow(true);
+    }
+
+    const onClose = (close) => {
+        close()
+    }
+  
+    return (
+      <>
+        <Button variant="outline-warning" onClick={handleShow}>
+            Confirm
+        </Button>
+  
+        <Modal show={show} onHide={handleClose} animation={true}>
+          <Modal.Header closeButton>
+            <Modal.Title>Thank you!</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+              <h4>Thank you for booking!</h4>
+              <p> You will receive an email shortly for further details </p>
+
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="light" onClick={handleClose}>
+              Close
+            </Button>
+            <Link to="/">
+                <Button variant="outline-warning" onClick={handleClose}>
+                Confirm Booking
+                </Button>
+
+            </Link>
+          </Modal.Footer>
+        </Modal>
+      </>
+    );
+  }
+
+const LocationPage = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const data = locations.locations[2];
+
+  console.log(props.id);
+  console.log(props.location);
 
   return (
     <div className="LocationPage">
@@ -73,7 +126,8 @@ const LocationPage = () => {
         <h4> Location Overview </h4>
         <p>{data.locOverview}</p>
       </div>
-      <div className="kontainer">
+      <h3 className="community-header">{data.community}</h3>
+      <div className="kontainer" style={{marginTop: `-20px !important`}}>
         <h4> Community Overview </h4>
         <p>{data.comOverview}</p>
       </div>
