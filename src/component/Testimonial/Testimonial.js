@@ -16,8 +16,7 @@ const Testimonial = props => {
         <h5>The most fun that I ever had traveling</h5>
       </div>
         <p>
-          This is the best place ever. I learned a lot about their culture and
-          the people are very nice.
+          I had fun and I learned more about the different cultures in the country. The Dumagat people are very hospitable and kind.
         </p>
     </div>
   );
