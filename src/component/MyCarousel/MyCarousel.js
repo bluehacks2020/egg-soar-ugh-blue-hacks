@@ -15,15 +15,15 @@ const MyCarousel = () => {
     <Carousel controls={false}>
       <Carousel.Item>
         <img className="d-block" src={one} alt="First slide" />
-        <Carousel.Caption><h3>{data[0].title}</h3></Carousel.Caption>
+        <Carousel.Caption><h1>{data[0].title}</h1></Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block" src={two} alt="Second slide" />
-        <Carousel.Caption><h3>{data[1].title}</h3></Carousel.Caption>
+        <Carousel.Caption><h1>{data[1].title}</h1></Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block" src={three} alt="Third slide" />
-        <Carousel.Caption><h3>{data[2].title}</h3></Carousel.Caption>
+        <Carousel.Caption><h1>{data[2].title}</h1></Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   )
