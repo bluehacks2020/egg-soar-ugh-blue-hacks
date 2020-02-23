@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -22,6 +22,7 @@ const Navigation = (props) => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto mb-2">
         <Form inline>
+          <Redirect to="/location"/>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
         <Link to={{pathname: "/"}}>Home</Link>
