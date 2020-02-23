@@ -10,7 +10,7 @@ Egg-Soar-Ugh
 
 ## Project Description
 
-Wandr is an Immersion booking platform that promotes cultural and social consciousness by giving volunteers an opportunity to experience living and working with minority groups in the provinces.
+Wandrr is an Immersion booking platform that promotes cultural and social consciousness by giving volunteers an opportunity to experience living and working with minority groups in the provinces.
 
 ## Installation Guide
 
