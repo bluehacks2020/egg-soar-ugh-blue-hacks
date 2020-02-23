@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { locations } from "../../../data/locations";
 import Button from "react-bootstrap/Button";
@@ -60,6 +60,10 @@ const BookButton = (props) => {
   );
 }
 const LocationPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const data = locations.locations[2];
 
   return (

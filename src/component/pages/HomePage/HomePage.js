@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import MyCarousel from '../../MyCarousel'
@@ -13,6 +13,10 @@ import  { articles }  from '../../../data/articles'
 import './style.css'
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const location = locations.locations
   const article = articles.articles
 
