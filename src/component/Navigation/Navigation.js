@@ -22,7 +22,6 @@ const Navigation = (props) => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto mb-2">
         <Form inline>
-          <Redirect to="/location"/>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
         <Nav.Link href="/">Home</Nav.Link>
