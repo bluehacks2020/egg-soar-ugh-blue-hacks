@@ -25,7 +25,7 @@ const Navigation = (props) => {
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
         <Link to={{pathname: "/"}}>Home</Link>
-        <Nav.Link href="#link">Profile</Nav.Link>
+        <Link to={{pathname: "/profile"}}>Profile</Link>
         <Nav.Link href="#link">Settings</Nav.Link>
         <Nav.Link href="#link">Logout</Nav.Link>
       </Nav>
