@@ -16,7 +16,7 @@ const Navigation = (props) => {
   })
 
   return (
-    <Navbar className="color-nav" expand="lg" fixed="top">
+    <Navbar collapseOnSelect className="color-nav" expand="lg" fixed="top">
     <Link to={{pathname: "/"}}><Navbar.Brand href="#home" style={{color: '#f4f4f4'}}></Navbar.Brand></Link>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -25,10 +25,10 @@ const Navigation = (props) => {
           <Redirect to="/location"/>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         </Form>
-        <Link to={{pathname: "/"}}>Home</Link>
-        <Link to={{pathname: "/profile"}}>Profile</Link>
-        <Nav.Link href="#link">Settings</Nav.Link>
-        <Nav.Link href="#link">Logout</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/profile">Profile</Nav.Link>
+        <Nav.Link href="#">Settings</Nav.Link>
+        <Nav.Link href="#">Logout</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
