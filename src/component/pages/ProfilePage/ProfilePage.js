@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import {Image, Card, Button} from 'react-bootstrap'
+import React, { useEffect, useState } from 'react'
+import {Image, Card, Button, Modal, Form, FormControl } from 'react-bootstrap'
 
 import profile from '../../../data/profile'
 import LocationCard from '../../LocationCard'
@@ -28,6 +28,9 @@ const ProfilePage = () => {
     }, [])
 
     const loc = locations.locations[0]
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
     <div className="ProfilePage">
@@ -57,9 +60,28 @@ const ProfilePage = () => {
             </div>
         </div>
         <div className="profile-article">
-            <Button variant="outline-warning">
+            <Button variant="outline-warning" onClick={handleShow}>
                 <strong>Write an Article</strong>
             </Button>
+
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                <Modal.Title>Post an Article</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form inline>
+                        <FormControl type="text" as="textarea" rows="3" placeholder="Tell us about your immersion experience" />
+                    </Form>
+                </Modal.Body>
+                <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Close
+                </Button>
+                <Button variant="primary" onClick={handleClose} className="orange">
+                    Post
+                </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     </div>
     )

@@ -22,7 +22,8 @@ img.profile-pic {
 }
 
 .profile-subsection {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .immersion-card {
@@ -73,4 +74,9 @@ border-color: #ff7315 !important;
 
 .hyperlink a, .hyperlink a:active, .hyperlink a:visited, .hyperlink a:focus {
     color: #ff7315;
+}
+
+.orange, .orange:active, .orange:visited, .orange:focus {
+    background-color: #ff7315 !important;
+    border-color: #ff7315 !important;
 }
